@@ -1,0 +1,14 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.gridWrapper {
+  margin: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(33% 1f);
+  grid-gap: 1rem;
+
+  .projectHeader {
+    grid-column: span 2;
+    background-color: yellow;
+  }
+}

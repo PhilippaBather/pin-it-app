@@ -1,0 +1,62 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.gridWrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 11% 89%;
+  grid-template-rows: clamp(4rem, 15vh, 7rem) 1fr;
+
+  .header {
+    position: relative;
+    z-index: 10;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    .nav {
+      display: flex;
+      align-items: center;
+
+      .nav__logoContainer {
+        flex-basis: 90%;
+        margin: 1rem 0rem 0rem 1.5rem;
+
+        @include display-flex();
+
+        @include media-min-width($breakpoint-larger-devices) {
+          margin: 1rem 0rem 0rem 3rem;
+        }
+
+        .nav__logoName {
+          margin-right: 2rem;
+          font-family: "Poppins", sans-serif;
+          font-size: 2rem;
+          color: $logo-aqua-blue;
+          text-shadow: 2px 3px 2px black;
+
+          @include media-min-width($breakpoint-larger-devices) {
+            margin-right: 5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .panel {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 1px solid black;
+    background-color: $panel-matte-black;
+  }
+
+  .main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+}
