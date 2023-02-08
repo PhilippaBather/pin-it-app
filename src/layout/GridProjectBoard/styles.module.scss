@@ -2,13 +2,38 @@
 @import "../../styles/variables.scss";
 
 .gridWrapper {
-  margin: 1rem 1rem;
   display: grid;
+  height: 90%;
+  margin: 1rem 1rem;
   grid-template-columns: repeat(33% 1f);
+  grid-template-rows: 10% 10% 80%;
   grid-gap: 1rem;
 
   .projectHeader {
     grid-column: span 2;
-    background-color: yellow;
+    display: grid;
+    justify-content: start;
+
+    .projectTitleInput {
+      font-size: 1.2rem;
+      width: 22rem;
+    }
+  }
+
+  .addTask {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .taskStateBox {
+    background-color: $task-state-box;
+
+    .taskStateTitle {
+      font-size: 1.2rem;
+      text-align: center;
+      color: $task-state-title;
+    }
   }
 }

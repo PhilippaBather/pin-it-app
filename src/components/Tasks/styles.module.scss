@@ -1,8 +1,7 @@
-.addTask {
-  grid-column-start: 3;
-  background-color: cyan;
-}
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
-.taskStateBox {
-  background-color: grey;
+.dropZone {
+  background-color: $dropzone-transparent-gray;
+  text-align: center;
 }

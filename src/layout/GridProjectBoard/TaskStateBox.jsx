@@ -1,9 +1,11 @@
 import styles from "./styles.module.scss";
 
-const TaskStateBox = () => {
+const TaskStateBox = (props) => {
+  const { title } = props;
+
   return (
     <div className={styles.taskStateBox}>
-      <h2>A state box</h2>
+      <h1 className={styles.taskStateTitle}>{title}</h1>
     </div>
   );
 };

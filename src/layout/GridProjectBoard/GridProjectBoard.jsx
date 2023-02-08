@@ -1,17 +1,16 @@
 import ProjectHeader from "./ProjectHeader";
-import TaskStateBox from "../../components/Tasks/TaskStateBox";
-
+import AddTask from "./AddTask";
+import TaskStates from "./TaskStates";
+import DropZoneContainer from "./DropZoneContainer";
 import styles from "./styles.module.scss";
-import AddTask from "../../components/Tasks/AddTask";
 
 const GridProjectBoard = (props) => {
   return (
     <div className={styles.gridWrapper}>
       <ProjectHeader />
       <AddTask />
-      <TaskStateBox />
-      <TaskStateBox />
-      <TaskStateBox />
+      <TaskStates />
+      <DropZoneContainer />
     </div>
   );
 };
