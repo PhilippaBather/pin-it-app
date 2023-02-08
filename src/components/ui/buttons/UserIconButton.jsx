@@ -1,4 +1,4 @@
-import styles from "./UserIconButton.module.scss";
+import styles from "./styles.module.scss";
 
 const UserIconButton = () => {
   return <button className={styles.userBtn}>User</button>;

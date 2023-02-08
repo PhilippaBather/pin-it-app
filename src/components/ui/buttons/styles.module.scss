@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.userBtn {
+  border-radius: 40px;
+  padding: 1.2rem;
+  background-color: $logo-aqua-blue;
+  border: solid 2px $user-btn-dark-turquoise-border;
+}
+
+.addTaskButton {
+  border-radius: 10px;
+  background-color: $white;
+  padding: 0.3rem;
+  width: 35%;
+  text-align: center;
+  color: $text-aqua-blue;
+
+  &:hover {
+    color: $white;
+    background-color: $text-aqua-blue;
+  }
+}
+
+.userBtn,
+.addTaskButton {
+  &:hover {
+    cursor: pointer;
+  }
+}

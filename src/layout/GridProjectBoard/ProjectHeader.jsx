@@ -3,7 +3,11 @@ import styles from "./styles.module.scss";
 const ProjectHeader = () => {
   return (
     <div className={styles.projectHeader}>
-      <h1>Project Title</h1>
+      <input
+        className={styles.projectTitleInput}
+        type="text"
+        placeholder="Project title..."
+      />
     </div>
   );
 };
