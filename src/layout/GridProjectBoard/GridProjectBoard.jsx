@@ -4,7 +4,7 @@ import TaskStates from "./TaskStates";
 import DropZoneContainer from "./DropZoneContainer";
 import styles from "./styles.module.scss";
 
-const GridProjectBoard = (props) => {
+const GridProjectBoard = () => {
   return (
     <div className={styles.gridWrapper}>
       <ProjectHeader />
