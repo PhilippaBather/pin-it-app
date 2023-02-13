@@ -48,21 +48,9 @@ const TaskCreatorForm = () => {
     // validate
     if (!isValidTitle || !isValidDeadline || title === "") return;
 
-    // if valid
-    console.log(title);
-    console.log(priority);
-    console.log(deadline);
-    console.log(description);
+    // TODO: update redux
 
     closeTaskCreator();
-
-    // reset
-    // setIsValidTitle(false);
-    // setIsValidDeadline(false);
-    // setTitle("");
-    // setPriority(0);
-    // setDeadline("");
-    // setDescription("");
   };
 
   const cancelHandler = () => {
