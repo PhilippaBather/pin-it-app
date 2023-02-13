@@ -1,6 +1,7 @@
 const CancelButton = (props) => {
+  const { btnStyles, onClick } = props;
   return (
-    <button className={props.btnStyles} type="text" onClick={props.onClick}>
+    <button className={btnStyles} type="text" onClick={onClick}>
       Cancel
     </button>
   );
