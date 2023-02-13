@@ -1,5 +1,5 @@
-import Logo from "../../components/UI/Logo";
-import UserIconButton from "../../components/UI/Buttons/UserIconButton";
+import Logo from "../../components/ui/Logo";
+import UserIconButton from "../../components/ui/Buttons/UserIconButton";
 import styles from "./styles.module.scss";
 
 const Header = () => {
