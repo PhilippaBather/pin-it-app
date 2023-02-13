@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CancelButton from "../UI/Buttons/CancelButton";
-import SubmitButton from "../UI/Buttons/SubmitButton";
+import CancelButton from "../ui/Buttons/CancelButton";
+import SubmitButton from "../ui/Buttons/SubmitButton";
 import { useTaskContext } from "../../store/context-api/task-context";
 import { isNotEmpty, validateDate } from "../../utils/validation";
 import styles from "./styles.module.scss";
