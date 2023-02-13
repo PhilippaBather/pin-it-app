@@ -1,7 +1,7 @@
 const SubmitButton = (props) => {
-  const { text } = props;
+  const { btnStyles, onClick, text } = props;
   return (
-    <button className={props.btnStyles} type="submit" onClick={props.onClick}>
+    <button className={btnStyles} type="submit" onClick={onClick}>
       {text}
     </button>
   );
