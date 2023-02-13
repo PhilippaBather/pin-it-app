@@ -1,6 +1,6 @@
 import CancelButton from "../UI/Buttons/CancelButton";
 import SubmitButton from "../UI/Buttons/SubmitButton";
-import { useTaskContext } from "../../store/task-context";
+import { useTaskContext } from "../../store/context-api/task-context";
 import styles from "./styles.module.scss";
 
 const date = new Date();
