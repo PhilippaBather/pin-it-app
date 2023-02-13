@@ -1,6 +1,6 @@
 import { useTaskContext } from "../../store/context-api/task-context.js";
-import TaskButton from "../../components/UI/Buttons/TaskButton";
-import AddTaskModal from "../../components/UI/Modals/ModalOverlay";
+import TaskButton from "../../components/ui/Buttons/TaskButton";
+import AddTaskModal from "../../components/ui/Modals/ModalOverlay";
 import styles from "./styles.module.scss";
 
 const AddTask = () => {
