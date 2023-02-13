@@ -1,10 +1,10 @@
-import ReactDOM from "react";
+import ReactDOM from "react-dom";
 import Card from "../Card";
 import TaskCreatorForm from "../../Tasks/TaskCreatorForm";
 import styles from "./styles.module.scss";
 
 const Backdrop = (props) => {
-  return <div />;
+  return <div className={styles.backdrop} />;
 };
 
 const TaskFormModalOverlay = (props) => {
