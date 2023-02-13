@@ -2,7 +2,7 @@ import GridGlobal from "../layout/GridGlobal/GridGlobal";
 import GridProjectBoard from "../layout/GridProjectBoard/GridProjectBoard";
 import styles from "../layout/GridGlobal/styles.module.scss";
 
-const Home = () => {
+const ProjectPage = () => {
   return (
     <>
       <GridGlobal>
@@ -14,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProjectPage;

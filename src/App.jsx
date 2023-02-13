@@ -1,8 +1,8 @@
-import Home from "./pages/Home";
+import ProjectPage from "./pages/ProjectPage";
 import "./styles/_main.scss";
 
 function App() {
-  return <Home />;
+  return <ProjectPage />;
 }
 
 export default App;

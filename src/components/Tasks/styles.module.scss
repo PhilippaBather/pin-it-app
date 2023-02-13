@@ -5,3 +5,53 @@
   background-color: $dropzone-transparent-gray;
   text-align: center;
 }
+
+.form {
+  padding: 0 3rem;
+  .formTitle {
+    color: $text-aqua-blue;
+    text-shadow: 3px 3px 3px $logo-aqua-blue;
+  }
+
+  .formInputsContainer {
+    display: flex;
+    flex-direction: column;
+
+    .formLabel {
+      color: $text-aqua-blue;
+    }
+
+    .formInputs,
+    .formTextArea {
+      padding: 0.2rem;
+      margin: 0.2rem 0 0.2rem 0;
+    }
+
+    .formTextArea {
+      height: 60px;
+    }
+  }
+
+  .formButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .formButton {
+      color: $white;
+      background-color: $text-aqua-blue;
+      margin: 1rem 1rem;
+      padding: 0.5rem;
+      width: 15%;
+      border: 1px solid $logo-aqua-blue;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        color: $text-aqua-blue;
+        background-color: $white;
+        border: 1px solid $text-aqua-blue;
+      }
+    }
+  }
+}
